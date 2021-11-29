@@ -1,0 +1,11 @@
+<PowerSelect
+  @options={{@users}}
+  @search={{this.searchTask.perform}}
+  @searchEnabled={{true}}
+  @selected={{this.selected}}
+  @onChange={{fn (mut this.selected)}} as |user|
+>
+  <strong>
+    {{user.username}}
+  </strong>
+</PowerSelect>
